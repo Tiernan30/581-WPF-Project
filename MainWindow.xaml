@@ -1,0 +1,18 @@
+﻿<Window x:Class="MusicButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Canvas Margin="0,0,0.4,-0.2" Background="PaleVioletRed">
+        <Grid Height="360" Width="383">
+            <Image x:Name="musicBtn" HorizontalAlignment="Left" Height="100" Margin="164,112,0,0" VerticalAlignment="Top" Width="53" Source="Images/MusicButtonGuy.png" Drop="MusicBtn_Drop" MouseDown="MusicBtn_MouseDown" MouseMove="MusicBtn_MouseMove" MouseUp="MusicBtn_MouseUp"/>
+            <Label x:Name="MsgLbl" Content="Drag me!" HorizontalAlignment="Left" Margin="158,212,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="GuitarLbl" Content="Guitar" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="PianoLbl" Content="Piano" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+    </Canvas>
+</Window>
